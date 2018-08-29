@@ -27,10 +27,10 @@ public class StackExercise {
 				if (c.equals(")") && !pila.pop().getType().equals("(")) {
 					return "F";
 				}
-				if (c.equals("]") && !pila.pop().equals("[")) {
+				if (c.equals("]") && !pila.pop().getType().equals("[")) {
 					return "F";
 				}
-				if (c.equals("}") && !pila.pop().equals("{")) {
+				if (c.equals("}") && !pila.pop().getType().equals("{")) {
 					return "F";
 				}
 			} else {
